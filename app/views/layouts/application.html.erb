@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Scene Survival Kit" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+      <!-- topbar -->
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/#">Scene Survival Kit</a></h1>
+        </li>
+        <li class="toggle-topbar menui-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="large-8 small-9 columns">
+              <input type="text" placeholder="Search Site">
+            </div>
+            <div class="large-4 small-3 columns">
+              <a href="#" class="alert button expand">Search</a>
+            </div>
+          </div>
+        </li>
+          <li class="has-dropdown"><a href="#">Hi James</a>
+            <ul class="dropdown">
+              <li><a href="#">View Profile</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="left">
+          <li><a href="/tickets">Print Artists</a></li>
+          <li><a href="/artists">Local Venues</a></li>
+          <li><a href="/venues">Photography</a></li>
+        </ul>
+      </section>
+      
+    </nav>
+    <!-- end topbar -->
+    <!-- start sidenav -->
+    <ul class="side-nav">
+      <li><a href="#">Merch You Might Like</a></li>
+      <li><a href="#">Shows Happening Right Now</a></li>
+      <li><a href="#">What's New This Week</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <!-- end sidenav -->
+
+    <!-- start Current Page Header-->
+     <div class="row">
+      <div class="top-offset-2">
+        <div class="medium-9 columns no-padding-left">
+          <header class="bottom-offset-2" id="page-header">
+            <h1>
+              <% case params[:controller]
+                  when "welcome"%><%= 'Dashboard' %>
+                  <% when "venues"%><%= 'Venues' %>
+                  <% when "user"%><%= 'User' %>
+              <% end %>
+            </h1>
+          </header>
+        </div>
+      </div>
+    </div>
+    <!--end Current Page Header-->
+
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
