@@ -1,8 +1,8 @@
 #README
 
-##This README documents all necessary steps in order to get Scene Survival Kit up and running in a linux environment.
+##This README documents all necessary steps in order to get Scene Survival Kit up and running on a linux environment.
 
-###Application Specs
+###Application Specs:
 
 #####Ruby 2.1.1
 
@@ -15,7 +15,7 @@
 * TODO
 
 #####Database creation
-* MySQL2 is being used in development, testing, and eventually production.
+* MySQL2 is being used in development.
 
 #####Database initialization
 * MySQL Adapter is included in the Gemfile. If this is a fresh installation, run $ 'bundle install'
