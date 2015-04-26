@@ -1,0 +1,2 @@
+module MerchArtistsHelper
+end

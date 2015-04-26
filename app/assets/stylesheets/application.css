@@ -15,3 +15,27 @@
  *= require foundation_and_overrides
 
  */
+
+/* APPLICATION WIDE STYLING  BELOW*/
+ .side-nav {
+	background-color: #999999;
+	position: fixed;
+	width: 130px;
+	height: 700px;
+}
+.top-bar li a:hover, .side-nav li a:hover {
+	border-radius: 5px;
+}
+.top-bar .button{
+	background: #555555;
+	height: 30px;
+	width: 60px;
+}
+.top-bar .button:hover {
+	background: #000000;
+}
+.panel {
+	width: 690px;
+	margin-top: 2%;
+	margin-left: 12%;
+}

@@ -43,9 +43,11 @@
           </li>
         </ul>
         <ul class="left">
-          <li><a href="/tickets">Print Artists</a></li>
-          <li><a href="/artists">Local Venues</a></li>
-          <li><a href="/venues">Photography</a></li>
+          <li><a href="/scene_feeds">Scene Feed</a></li>
+          <li><a href="/venues">Venues</a></li>
+          <li><a href="/band_mates">Bandmates Wanted</a></li>
+          <li><a href="/merch_artists">Graphic Artists</a></li>
+          <li><a href="/media_artists">Photography & Videos</a></li>
         </ul>
       </section>
       
@@ -53,10 +55,9 @@
     <!-- end topbar -->
     <!-- start sidenav -->
     <ul class="side-nav">
-      <li><a href="#">Merch You Might Like</a></li>
-      <li><a href="#">Shows Happening Right Now</a></li>
+      <li><a href="#">Merch Store</a></li>
+      <li><a href="#">Shows Happening Now</a></li>
       <li><a href="#">What's New This Week</a></li>
-      <li><a href="#">Contact Us</a></li>
     </ul>
     <!-- end sidenav -->
 
@@ -68,7 +69,11 @@
             <h1>
               <% case params[:controller]
                   when "welcome"%><%= 'Dashboard' %>
+                  <% when "scene_feeds"%><%= 'Scene Feed' %>
                   <% when "venues"%><%= 'Venues' %>
+                   <% when "band_mates"%><%= 'Local Musicians' %>
+                    <% when "merch_artists"%><%= 'Graphic Artists & Merchandising' %>
+                    <% when "media_artists"%><%= 'Photographers & Directors' %>
                   <% when "user"%><%= 'User' %>
               <% end %>
             </h1>

@@ -1,0 +1,2 @@
+module MediaArtistsHelper
+end

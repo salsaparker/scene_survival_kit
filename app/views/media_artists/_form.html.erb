@@ -1,0 +1,17 @@
+<%= form_for(@media_artist) do |f| %>
+  <% if @media_artist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@media_artist.errors.count, "error") %> prohibited this media_artist from being saved:</h2>
+
+      <ul>
+      <% @media_artist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

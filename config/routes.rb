@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+
+  resources :welcome, :scene_feeds, :venues, :band_mates, :merch_artists, :media_artists
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

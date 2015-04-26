@@ -1,0 +1,2 @@
+class SceneFeedsController < ApplicationController
+end
