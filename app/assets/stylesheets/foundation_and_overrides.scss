@@ -954,7 +954,7 @@ $body-bg: #ffffff;
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-$panel-bg: #3B3B3B;
+$panel-bg: #999999;
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 
@@ -964,10 +964,10 @@ $panel-bg: #3B3B3B;
 
 // We use these to set default inner padding and bottom margin
 // $panel-margin-bottom: rem-calc(20);
-// $panel-padding: rem-calc(20);
+$panel-padding: rem-calc(30);
 
 // We use these to set default font colors
-// $panel-font-color: $oil;
+$panel-font-color: #FFFFFF;
 // $panel-font-color-alt: $white;
 
 // $panel-header-adjust: true;
@@ -1364,7 +1364,7 @@ $side-nav-link-bg-hover: #222222;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: #9E282D;
+$topbar-bg-color: #41868D;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1376,10 +1376,10 @@ $topbar-height: 50px;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: #9C2930;
+$topbar-dropdown-bg: #41868D;
 // $topbar-dropdown-link-color: $white;
-$topbar-dropdown-link-bg: #9C2930;
-// $topbar-dropdown-link-bg-hover: $oil;
+$topbar-dropdown-link-bg: #49A6B1;
+$topbar-dropdown-link-bg-hover: #A6A6A6;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1395,7 +1395,7 @@ $topbar-dropdown-link-bg: #9C2930;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-hover: $oil;
+$topbar-link-bg-hover: #A6A6A6;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;

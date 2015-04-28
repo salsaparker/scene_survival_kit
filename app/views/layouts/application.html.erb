@@ -33,7 +33,7 @@
             </div>
           </div>
         </li>
-          <li class="has-dropdown"><a href="#">Hi James</a>
+          <li class="has-dropdown"><a href="#">James</a>
             <ul class="dropdown">
               <li><a href="#">View Profile</a></li>
               <li><a href="#">Help</a></li>
@@ -50,9 +50,9 @@
           <li><a href="/media_artists">Photography & Videos</a></li>
         </ul>
       </section>
-      
     </nav>
     <!-- end topbar -->
+
     <!-- start sidenav -->
     <ul class="side-nav">
       <li><a href="#">Merch Store</a></li>
@@ -63,10 +63,10 @@
 
     <!-- start Current Page Header-->
      <div class="row">
-      <div class="top-offset-2">
-        <div class="medium-9 columns no-padding-left">
+      <div class="top-offset-3">
+        <div class="medium-12 columns text-center">
           <header class="bottom-offset-2" id="page-header">
-            <h1>
+            <h2 id="medium-grid">
               <% case params[:controller]
                   when "welcome"%><%= 'Dashboard' %>
                   <% when "scene_feeds"%><%= 'Scene Feed' %>
@@ -76,7 +76,7 @@
                     <% when "media_artists"%><%= 'Photographers & Directors' %>
                   <% when "user"%><%= 'User' %>
               <% end %>
-            </h1>
+            </h2>
           </header>
         </div>
       </div>

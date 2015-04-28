@@ -18,13 +18,16 @@
 
 /* APPLICATION WIDE STYLING  BELOW*/
  .side-nav {
-	background-color: #999999;
+	background-color: #BFBFBF;
 	position: fixed;
-	width: 130px;
+	width: 171px;
 	height: 700px;
 }
+h2 {
+	color: #555555;
+}
 .top-bar li a:hover, .side-nav li a:hover {
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 }
 .top-bar .button{
 	background: #555555;
