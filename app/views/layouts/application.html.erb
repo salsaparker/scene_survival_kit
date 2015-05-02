@@ -44,10 +44,10 @@
         </ul>
         <ul class="left">
           <li><a href="/scene_feeds">Scene Feed</a></li>
-          <li><a href="/venues">Venues</a></li>
-          <li><a href="/band_mates">Bandmates Wanted</a></li>
-          <li><a href="/merch_artists">Graphic Artists</a></li>
-          <li><a href="/media_artists">Photography & Videos</a></li>
+          <li><a href="/venues">Play A Show, Dude.</a></li>
+          <li><a href="/musicians">Join my band, dude.</a></li>
+          <li><a href="/visual_artists">Take Some Selfies</a></li>
+          <!-- refactor media to encompass all three -->
         </ul>
       </section>
     </nav>
@@ -55,13 +55,13 @@
 
     <!-- start sidenav -->
     <ul class="side-nav">
-      <li><a href="#">Merch Store</a></li>
-      <li><a href="#">Shows Happening Now</a></li>
-      <li><a href="#">What's New This Week</a></li>
+      <li><a href="#">Buy A Bunch Of Band Stuff</a></li>
+      <li><a href="#">Go See A Show Right Now</a></li>
+      <li><a href="#">Tell Us Why You Hate Us</a></li>
     </ul>
     <!-- end sidenav -->
 
-    <!-- start Current Page Header-->
+    <!-- Start Current Page Header-->
      <div class="row">
       <div class="top-offset-3">
         <div class="medium-12 columns text-center">
@@ -71,10 +71,8 @@
                   when "welcome"%><%= 'Dashboard' %>
                   <% when "scene_feeds"%><%= 'Scene Feed' %>
                   <% when "venues"%><%= 'Venues' %>
-                   <% when "band_mates"%><%= 'Local Musicians' %>
-                    <% when "merch_artists"%><%= 'Graphic Artists & Merchandising' %>
-                    <% when "media_artists"%><%= 'Photographers & Directors' %>
-                  <% when "user"%><%= 'User' %>
+                  <% when "musicians"%><%= 'Local Musicians' %>
+                  <% when "visual_artists"%><%= 'Photography, Merchandising & Video Directing' %>
               <% end %>
             </h2>
           </header>
@@ -82,8 +80,11 @@
       </div>
     </div>
     <!--end Current Page Header-->
-
-    <%= yield %>
+    <div class="row">
+      <div class="panel clearfix">
+        <%= yield %>
+      </div>
+    </div>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

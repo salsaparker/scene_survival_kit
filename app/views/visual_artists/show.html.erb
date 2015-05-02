@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @visual_artist.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @visual_artist.last_name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @visual_artist.type %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @visual_artist.phone_number %>
+</p>
+
+<p>
+  <strong>Email address:</strong>
+  <%= @visual_artist.email_address %>
+</p>
+
+<%= link_to 'Edit', edit_visual_artist_path(@visual_artist) %> |
+<%= link_to 'Back', visual_artists_path %>

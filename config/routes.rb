@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :welcome, :scene_feeds, :venues, :band_mates, :merch_artists, :media_artists
+  resources :visual_artists
+
+  resources :musicians
+
+  resources :venues
+
+  resources :scene_feeds
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
