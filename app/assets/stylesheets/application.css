@@ -22,7 +22,7 @@ body {
 }
  .side-nav {
 	background-color: #BFBFBF;
-	position: fixed;
+	position: absolute;
 	width: 171px;
 	height: 700px;
 }
@@ -41,7 +41,7 @@ h2 {
 	background: #000000;
 }
 .panel {
-	width: 690px;
+	width: auto
 	margin-top: 2%;
-	margin-left: 12%;
+	margin-left: 10%;
 }

@@ -1,12 +1,13 @@
-<h1>Local Musicians</h1>
+<h1>Listing musicians</h1>
 
 <table>
   <thead>
     <tr>
       <th>First name</th>
       <th>Last name</th>
-      <th>Phone number</th>
       <th>Instrument</th>
+      <th>Email address</th>
+      <th>Phone number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +17,9 @@
       <tr>
         <td><%= musician.first_name %></td>
         <td><%= musician.last_name %></td>
-        <td><%= musician.phone_number %></td>
         <td><%= musician.instrument %></td>
+        <td><%= musician.email_address %></td>
+        <td><%= musician.phone_number %></td>
         <td><%= link_to 'Show', musician %></td>
         <td><%= link_to 'Edit', edit_musician_path(musician) %></td>
         <td><%= link_to 'Destroy', musician, method: :delete, data: { confirm: 'Are you sure?' } %></td>

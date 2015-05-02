@@ -3,10 +3,9 @@ class CreateMusicians < ActiveRecord::Migration
     create_table :musicians do |t|
       t.string :first_name
       t.string :last_name
-      t.boolean :band
-      t.string :band_name
-      t.integer :phone_number
       t.string :instrument
+      t.string :email_address
+      t.text :phone_number
 
       t.timestamps
     end

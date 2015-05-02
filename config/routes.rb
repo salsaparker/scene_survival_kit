@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :visual_artists
-
   resources :musicians
+
+  resources :visual_artists
 
   resources :venues
 
